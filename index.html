@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day 1- AI Image Detector - Oz</title>
+</head>
+
+<body>
+
+    <h1>AI Image Detector</h1>
+
+    <div class="wrapper">
+        <div class="upload-container">
+            <h3>Upload your image</h3>
+            <div class="buttons">
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                <button class="file-input-button" onclick="document.getElementById('imageInput').click();">Choose File</button>
+                    <button id="uploadBtn">Upload</button>
+                </div>
+                <img src="" id="imagePreview">
+
+            </div>
+
+            <div class="color-container">
+                <p class="error">Nothing to show...</p>
+            </div>
+        
+        </div>
+    </div>
+    <div>
+        <div class="data-container">
+            <h3>Image Data</h3>
+            <p class="error">Nothing to show...</p>
+            <div class="results"></div>
+            <div class="buttons">
+                <button id="seeMorebutton" style="display: none;">See More</button>
+                <button id="exportTagsButton" style="display: none;">Export Tags</button>
+            </div>
+    </div>
+
+    <div id="uploadModal" class="modal"></div>
+        <div class="modal-content">
+            <h3>Uploading Image</h3>
+            <div class="progress-bar">
+                <div id="uploadProgress" class="progress"></div>
+            </div>
+        </div>
+
+
+
+<div class="script js"></div>
+</body>
+
+</html>
